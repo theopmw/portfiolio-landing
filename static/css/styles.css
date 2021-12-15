@@ -1,21 +1,22 @@
-body {
+.hero-header {
   margin: 0;
+  padding-top: 100px;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
 
-body, body * {
+.hero-header, .hero-header * {
   cursor: none;
 }
 
-body .cursor {
+.hero-header .cursor {
   position: fixed;
   background: #2128bd;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  margin: -10px 0 0 -10px;
+  margin: -61px 0 0 -5px;
   will-change: transform;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -25,44 +26,44 @@ body .cursor {
   z-index: 10000;
 }
 
-body .shapes {
+.hero-header .shapes {
   position: relative;
-  height: 100vh;
+  height: 500px;
   width: 100vw;
   background: #2128bd;
   overflow: hidden;
 }
 
-body .shapes .shape {
+.hero-header .shapes .shape {
   will-change: transform;
   position: absolute;
   border-radius: 50%;
 }
 
-body .shapes .shape.shape-1 {
+.hero-header .shapes .shape.shape-1 {
   background: #005ffe;
   width: 650px;
   height: 650px;
   margin: -325px 0 0 -325px;
 }
 
-body .shapes .shape.shape-2 {
-  background: #ffe5e3;
+.hero-header .shapes .shape.shape-2 {
+  background: #e28446;
   width: 440px;
   height: 440px;
   margin: -220px 0 0 -220px;
 }
 
-body .shapes .shape.shape-3 {
-  background: #ffcc57;
+.hero-header .shapes .shape.shape-3 {
+  background: #1c7cac;
   width: 270px;
   height: 270px;
   margin: -135px 0 0 -135px;
 }
 
-body .content {
+.hero-header .content {
   position: absolute;
-  top: 0;
+  top: 56px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,13 +74,13 @@ body .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 500px;
   width: 100vw;
   background: #fff;
   mix-blend-mode: screen;
 }
 
-body .content .landing-title {
+.hero-header .content .landing-title {
   font-size: 10em;
   font-weight: 900;
   color: #000;

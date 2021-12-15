@@ -1,4 +1,4 @@
-document.body.addEventListener("mousemove", event => {
+document.getElementById("hero").addEventListener("mousemove", event => {
     const mouseX = event.clientX;
     const mouseY = event.clientY;
 

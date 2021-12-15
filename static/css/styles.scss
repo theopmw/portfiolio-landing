@@ -1,5 +1,9 @@
-body {
+
+
+
+.hero-header {
     margin: 0;
+    padding-top: 100px;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -11,10 +15,10 @@ body {
     .cursor {
         position: fixed;
         background: #2128bd;
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        margin: -10px 0 0 -10px;
+        margin: -61px 0 0 -5px;
         will-change: transform;
         user-select: none;
         pointer-events: none;
@@ -23,7 +27,7 @@ body {
 
     .shapes {
         position: relative;
-        height: 100vh;
+        height: 500px;
         width: 100vw;
         background: #2128bd;
         overflow: hidden;
@@ -33,7 +37,7 @@ body {
             position: absolute;
             border-radius: 50%;
 
-            $shapes: (#005ffe: 650px, #ffe5e3: 440px, #ffcc57: 270px);
+            $shapes: (#005ffe: 650px, #e28446: 440px, #1c7cac: 270px);
             
             @each $color, $size in $shapes {
                 &.shape-#{index($shapes, ($color $size))} {
@@ -48,21 +52,21 @@ body {
 
     .content {
         position: absolute;
-        top: 0;
+        top: 56px;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 500px;
         width: 100vw;
         background: #fff;
         mix-blend-mode: screen;
 
-    .landing-title {
-        font-size: 10em;
-        font-weight: 900;
-        color: #000;
-        margin: 0;
-    }
+        .landing-title {
+            font-size: 10em;
+            font-weight: 900;
+            color: #000;
+            margin: 0;
+        }
     }
 }
