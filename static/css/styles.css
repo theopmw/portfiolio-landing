@@ -24,14 +24,19 @@
           user-select: none;
   pointer-events: none;
   z-index: 10000;
+  top: 0;
 }
 
 .hero-header .shapes {
   position: relative;
-  height: 500px;
+  height: 600px;
   width: 100vw;
   background: #2128bd;
   overflow: hidden;
+}
+
+.hero-header .shapes .shape-1 {
+  margin: -191px 0 0 -135px;
 }
 
 .hero-header .shapes .shape {
@@ -44,21 +49,21 @@
   background: #005ffe;
   width: 650px;
   height: 650px;
-  margin: -325px 0 0 -325px;
+  margin: -381px 0 0 -325px;
 }
 
 .hero-header .shapes .shape.shape-2 {
   background: #e28446;
   width: 440px;
   height: 440px;
-  margin: -220px 0 0 -220px;
+  margin: -276px 0 0 -220px;
 }
 
 .hero-header .shapes .shape.shape-3 {
   background: #1c7cac;
   width: 270px;
   height: 270px;
-  margin: -135px 0 0 -135px;
+  margin: -191px 0 0 -135px;
 }
 
 .hero-header .content {
@@ -74,16 +79,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 500px;
+  height: 601px;
   width: 100vw;
   background: #fff;
   mix-blend-mode: screen;
 }
 
-.hero-header .content .landing-title {
-  font-size: 10em;
+.hero-header .content .landing-heading {
+  font-size: 5em;
   font-weight: 900;
   color: #000;
   margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-header .content .landing-heading {
+    font-size: 10em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -23,14 +23,19 @@
         user-select: none;
         pointer-events: none;
         z-index: 10000;
+        top: 0;
     }
 
     .shapes {
         position: relative;
-        height: 500px;
+        height: 600px;
         width: 100vw;
         background: #2128bd;
         overflow: hidden;
+
+          .shape-1 {
+                margin: -191px 0 0 -135px;
+            }
 
         .shape {
             will-change: transform;
@@ -44,11 +49,12 @@
                     background: $color;
                     width: $size;
                     height: $size;
-                    margin: (-$size/2) 0 0 (-$size/2);
+                    margin: ((-$size/2) - 56) 0 0 (-$size/2);
                 }
             }
         }
     }
+
 
     .content {
         position: absolute;
@@ -57,16 +63,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        height: 601px;
         width: 100vw;
         background: #fff;
         mix-blend-mode: screen;
 
-        .landing-title {
-            font-size: 10em;
+        .landing-heading {
+            font-size: 5em;
             font-weight: 900;
             color: #000;
             margin: 0;
         }
     }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-header {
+        .content {
+            .landing-heading {
+                font-size: 10em;
+           }
+        } 
+    }   
 }
