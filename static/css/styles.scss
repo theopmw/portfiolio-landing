@@ -13,7 +13,7 @@ nav {
 
 .hero-header {
     margin: 0;
-    padding-top: 100px;
+    // padding-top: 100px;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -33,7 +33,6 @@ nav {
         user-select: none;
         pointer-events: none;
         z-index: 10000;
-        // top: 0;
     }
 
     .shapes {
@@ -42,10 +41,6 @@ nav {
         width: 100vw;
         background: #2128bd;
         overflow: hidden;
-
-        //   .shape-1 {
-        //         margin: -191px 0 0 -135px;
-        //     }
 
         .shape {
             will-change: transform;
@@ -59,23 +54,21 @@ nav {
                     background: $color;
                     width: $size;
                     height: $size;
-                    margin: ((-$size/2) - 56) 0 0 (-$size/2);
+                    margin: ((-$size/2)) 0 0 (-$size/2);
                 }
             }
         }
     }
 
-    .content {
+    .hero-content {
         position: absolute;
-        top: 54px;
+        top: 0;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 600px;
-        // width: 100vw;
         background: #fff;
-        // background: #ececec;
         mix-blend-mode: screen;
 
         .landing-heading {
@@ -89,52 +82,8 @@ nav {
 
 @media screen and (min-width: 992px) {
     .hero-header {
-        .content {
-            top: 56px;
             .landing-heading {
                 font-size: 10em;
            }
         } 
     }
-    #my-navbar-collapse {
-        position: static !important;
-    }  
-}
-
-#my-navbar-collapse {
-    position: fixed;
-    top: 54px;
-    left: 0;
-    z-index: 1;
-    width: 280px; /*example + never use min-width with this solution */
-    height: 100%;
-    background: #ececec;
-    opacity: 0.8;
-}
-
-// .bg-light {
-//     background-color: #fff !important
-// }
-
-// .navbar-toggler {
-//     border: none;
-// }
-
-.navbar-toggler:focus {
-    border: none;
-    // border-color: #fff !important;
-    outline: none;
-}
-
-/* Code for changing Bootstrap navbar toggler taken from https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/ */
-/* Set the navbar-toggler border color */    
-.custom-toggler.navbar-toggler {
-    // border-color: #000;
-    // border-width: 2px;
-    border: none !important;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url(
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(28, 48, 182)' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}

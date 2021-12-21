@@ -12,7 +12,6 @@ nav {
 
 .hero-header {
   margin: 0;
-  padding-top: 100px;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
@@ -56,26 +55,26 @@ nav {
   background: #005ffe;
   width: 650px;
   height: 650px;
-  margin: -381px 0 0 -325px;
+  margin: -325px 0 0 -325px;
 }
 
 .hero-header .shapes .shape.shape-2 {
   background: #e28446;
   width: 440px;
   height: 440px;
-  margin: -276px 0 0 -220px;
+  margin: -220px 0 0 -220px;
 }
 
 .hero-header .shapes .shape.shape-3 {
   background: #1c7cac;
   width: 270px;
   height: 270px;
-  margin: -191px 0 0 -135px;
+  margin: -135px 0 0 -135px;
 }
 
-.hero-header .content {
+.hero-header .hero-content {
   position: absolute;
-  top: 54px;
+  top: 0;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +90,7 @@ nav {
   mix-blend-mode: screen;
 }
 
-.hero-header .content .landing-heading {
+.hero-header .hero-content .landing-heading {
   font-size: 5em;
   font-weight: 900;
   color: #000;
@@ -99,41 +98,8 @@ nav {
 }
 
 @media screen and (min-width: 992px) {
-  .hero-header .content {
-    top: 56px;
-  }
-  .hero-header .content .landing-heading {
+  .hero-header .landing-heading {
     font-size: 10em;
   }
-  #my-navbar-collapse {
-    position: static !important;
-  }
-}
-
-#my-navbar-collapse {
-  position: fixed;
-  top: 54px;
-  left: 0;
-  z-index: 1;
-  width: 280px;
-  /*example + never use min-width with this solution */
-  height: 100%;
-  background: #ececec;
-  opacity: 0.8;
-}
-
-.navbar-toggler:focus {
-  border: none;
-  outline: none;
-}
-
-/* Code for changing Bootstrap navbar toggler taken from https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/ */
-/* Set the navbar-toggler border color */
-.custom-toggler.navbar-toggler {
-  border: none !important;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(28, 48, 182)' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 /*# sourceMappingURL=styles.css.map */
