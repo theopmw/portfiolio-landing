@@ -1,3 +1,15 @@
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-black {
+  color: #000;
+}
+
+nav {
+  background-color: #ececec;
+}
+
 .hero-header {
   margin: 0;
   padding-top: 100px;
@@ -24,7 +36,6 @@
           user-select: none;
   pointer-events: none;
   z-index: 10000;
-  top: 0;
 }
 
 .hero-header .shapes {
@@ -33,10 +44,6 @@
   width: 100vw;
   background: #2128bd;
   overflow: hidden;
-}
-
-.hero-header .shapes .shape-1 {
-  margin: -191px 0 0 -135px;
 }
 
 .hero-header .shapes .shape {
@@ -68,7 +75,7 @@
 
 .hero-header .content {
   position: absolute;
-  top: 56px;
+  top: 54px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,8 +86,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 601px;
-  width: 100vw;
+  height: 600px;
   background: #fff;
   mix-blend-mode: screen;
 }
@@ -93,8 +99,41 @@
 }
 
 @media screen and (min-width: 992px) {
+  .hero-header .content {
+    top: 56px;
+  }
   .hero-header .content .landing-heading {
     font-size: 10em;
   }
+  #my-navbar-collapse {
+    position: static !important;
+  }
+}
+
+#my-navbar-collapse {
+  position: fixed;
+  top: 54px;
+  left: 0;
+  z-index: 1;
+  width: 280px;
+  /*example + never use min-width with this solution */
+  height: 100%;
+  background: #ececec;
+  opacity: 0.8;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+
+/* Code for changing Bootstrap navbar toggler taken from https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/ */
+/* Set the navbar-toggler border color */
+.custom-toggler.navbar-toggler {
+  border: none !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(28, 48, 182)' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 /*# sourceMappingURL=styles.css.map */
